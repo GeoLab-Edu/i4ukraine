@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "FS";
+  src: url("../font/FiraSans-Medium.eot");
+  src: url("../font/FiraSans-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../font/FiraSans-Medium.woff2") format("woff2"),
+    url("../font/FiraSans-Medium.woff") format("woff"),
+    url("../font/FiraSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
