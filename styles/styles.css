@@ -14,7 +14,7 @@
 
 body {
   text-align: center;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 80px;
 }
 
@@ -26,11 +26,14 @@ body {
   justify-content: space-between;
 }
 
+.child-container {
+  margin-top: 110px;
+}
 .flag {
   position: absolute;
   top: 80px;
   right: 80px;
-  width: 15%;
+  width: 10%;
 }
 
 .title {
@@ -40,7 +43,22 @@ body {
 
 .message {
   color: #005bbb;
-  font-size: 2vw;
+  font-size: 1.7vw;
+}
+
+.dark-message {
+  color: rgb(4, 4, 4);
+  line-height: 50px;
+}
+
+.purple-message {
+  color: rgb(99, 42, 134);
+}
+
+.header-message {
+  color: rgb(91, 144, 186);
+  font-size: 3vw;
+  margin-bottom: 50px;
 }
 
 .apply_button {
@@ -57,16 +75,25 @@ body {
 .apply_button:hover {
   background-color: #005bbb;
   color: #ffd400;
-  transform: scale(1.5);
+}
+
+.purple:hover {
+  background-color: rgb(99, 42, 134);
+}
+
+.dark:hover {
+  background-color: rgb(91, 144, 186);
 }
 
 .slava {
   font-size: 3vw;
   color: #ffd400;
+  margin-bottom: 20px;
 }
 
 .swiper {
   width: 100%;
+  margin-top: 60px;
 }
 
 .partners {
@@ -75,14 +102,36 @@ body {
   justify-content: space-between;
 }
 
+.button_container {
+  margin-top: 50px;
+}
+
 .image-container {
   width: 20%;
   height: 4vw;
 }
 
+.social-icons {
+  margin-top: 120px;
+  width: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons a img {
+  width: 50px;
+  height: 50px;
+}
+
 .image-container img {
   height: 100%;
   width: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
 }
 
 @media (max-width: 1300px) {
@@ -96,7 +145,7 @@ body {
   }
   .message {
     font-size: 2.2vw;
-    line-height: 85px;
+    line-height: 55px;
   }
 
   .apply_button {
@@ -108,17 +157,53 @@ body {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
+  .title {
+    font-size: 6vw;
+  }
+  .message {
+    font-size: 3vw;
+    line-height: 45px;
+  }
+
+  .header-message {
+    margin-bottom: 20px;
+  }
+
+  .child-container {
+    margin-top: 60px;
+  }
+
+  .apply_button {
+    font-size: 3vw;
+    padding: 5px 10px;
+  }
+
+  .slava {
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 600px) {
   .title {
     font-size: 6vw;
   }
   .message {
     font-size: 5vw;
-    line-height: 45px;
+    line-height: 35px;
+  }
+
+  .header-message {
+    margin-bottom: 20px;
+  }
+
+  .child-container {
+    margin-top: 40px;
   }
 
   .apply_button {
-    font-size: 5vw;
+    font-size: 3vw;
+    padding: 5px 10px;
   }
 
   .slava {
