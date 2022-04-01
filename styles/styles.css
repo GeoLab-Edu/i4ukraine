@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "FS";
+  text-decoration: none;
 }
 
 *:focus {
@@ -136,6 +137,10 @@ body {
 .swiper-button-prev,
 .swiper-button-next {
   display: none;
+}
+
+.yt_icon {
+  margin-left: 20px;
 }
 
 @media (max-width: 1300px) {
